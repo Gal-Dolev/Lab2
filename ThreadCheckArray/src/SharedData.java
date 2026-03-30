@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-
 /**
  * SharedData is a class made to check if a given integer sum is reachable by
  * adding the elements of a given integer array, if reachable, stores boolean
@@ -8,7 +7,7 @@ import java.util.ArrayList;
  */
 public class SharedData {
 
-	/** array - local ArrayList<Integer> stores the numbers entered */
+	/** array - local ArrayList stores the numbers entered */
 	private ArrayList<Integer> array;
 
 	/**
@@ -18,8 +17,9 @@ public class SharedData {
 	private boolean[] winArray;
 
 	/**
-	 * flag - boolean variable- "true"- the wanted sum is reachable from entered
-	 * array "false"- the wanted sum is unreachable from entered array
+	 * flag - boolean variable- 
+	 * "true"- the wanted sum is reachable from entered array 
+	 * "false"- the wanted sum is unreachable from entered array
 	 */
 
 	private boolean flag;
@@ -28,72 +28,59 @@ public class SharedData {
 	private final int b;
 
 	/**
-
-	 * SharedData constructor
+	 * Constructs a SharedData instance with the available numbers and the target sum.
 	 * 
-	 * @param array
-	 * @param b
-	 * Description of SharedData(ArrayList<Integer> array, int b)
-	 * The constructor of SharedData.
+	 * @param array sets array (ArrayList)
+	 * @param b     sets b (int)
 	 * 
-	 * @param array - sets array (ArrayList<Integer>)
-	 * @param b - sets b (int)
-
 	 */
 	public SharedData(ArrayList<Integer> array, int b) {
 		this.array = array;
 		this.b = b;
 	}
 
-
 	/**
-	 * Description of getWinArray()
+	 * Retrieves the array of flags indicating used numbers.
 	 * 
-	 * @return - returns winArray (boolean[]).
+	 * @return returns winArray (boolean[]).
 	 */
 
 	public boolean[] getWinArray() {
 		return winArray;
 	}
 
-
 	/**
-	 * Description of setWinArray(boolean[] winArray)
+	 * Updates the array of flags indicating used numbers.
 	 * 
-	 * @param winArray - sets winArray to
+	 * @param winArray sets winArray to
 	 */
 
 	public void setWinArray(boolean[] winArray) {
 		this.winArray = winArray;
 	}
 
-
 	/**
-	 * Description of getArray()
+	 * Returns array.
 	 * 
-	 * @return - returns array (ArrayList<Integer>).
+	 * @return returns array (ArrayList).
 	 */
 
 	public ArrayList<Integer> getArray() {
 		return array;
 	}
 
-
 	/**
-	 * Description of getB()
-	 * 
-	 * @return - returns the value of b (int).
+	 * Returns b.
+	 * @return returns the value of b (int).
 	 */
 
 	public int getB() {
 		return b;
 	}
 
-
 	/**
-	 * Description of getFlag()
-	 *
-	 * @return - returns the value of flag (boolean).
+	 * Returns flag.
+	 * @return returns the value of flag (boolean).
 	 */
 
 	public boolean getFlag() {
@@ -101,11 +88,9 @@ public class SharedData {
 	}
 
 	/**
-	 * Description of setFlag(boolean flag)
+	 * Changes flag's value according to sent boolean parameter.
 	 * 
-	 * changes flag's value according to sent boolean parameter.
-	 * 
-	 * @param flag - boolean value
+	 * @param flag boolean value
 	 */
 	public void setFlag(boolean flag) {
 		this.flag = flag;
