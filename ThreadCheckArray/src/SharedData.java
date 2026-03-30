@@ -1,44 +1,55 @@
 import java.util.ArrayList;
 
-public class SharedData 
-{
-	
-	private ArrayList <Integer> array;
-	private boolean [] winArray;
+public class SharedData {
+
+	private ArrayList<Integer> array;
+	private boolean[] winArray;
 	private boolean flag;
 	private final int b;
-	
-	public SharedData(ArrayList <Integer> array, int b) {
-		
+
+	public SharedData(ArrayList<Integer> array, int b) {
+
 		this.array = array;
 		this.b = b;
 	}
 
-	public boolean[] getWinArray() 
-	{
+	public boolean[] getWinArray() {
 		return winArray;
 	}
 
-	public void setWinArray(boolean [] winArray) 
-	{
+	public void setWinArray(boolean[] winArray) {
 		this.winArray = winArray;
 	}
 
-	public ArrayList <Integer> getArray() 
-	{
+	public ArrayList<Integer> getArray() {
 		return array;
 	}
-
-	public int getB() 
-	{
+	
+	/**
+	 * Description of getB()
+	 * 
+	 * @return - returns the value of b (int).
+	 */
+	public int getB() {
 		return b;
 	}
 
-	public boolean getFlag() 
-	{
+	/**
+	 * Description of getFlag()
+	 *
+	 * @return - returns the value of flag (true/false).
+	 */
+	public boolean getFlag() {
 		return flag;
 	}
 
+	/**
+	 * Description of setFlag(boolean flag)
+	 * 
+	 * changes flag's value according to send boolean parameter.
+	 * 
+	 * @param flag - boolean value
+	 */
 	public void setFlag(boolean flag) {
 		this.flag = flag;
 	}
